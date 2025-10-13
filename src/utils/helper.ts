@@ -8,3 +8,5 @@ export const colorNameToHex = (name: string) => {
   //@ts-ignore
   return colors[name.replace(/\s+/g, "")] ;
 };
+
+
