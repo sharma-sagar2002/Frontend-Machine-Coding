@@ -1,5 +1,6 @@
 import "./App.css";
-import TogglePassword from "./Components/TogglePassword";
+import AsteriskFieldValidation from "./Components/AsteriskValidation";
+// import TogglePassword from "./Components/TogglePassword";
 // import ChipsInput from "./Components/Chip";
 // import ColorExplorer from "./Components/ColorExplorer";
 
@@ -8,7 +9,8 @@ function App() {
     <>
       {/* <ChipsInput /> */}
       {/* <ColorExplorer /> */}
-      <TogglePassword />
+      {/* <TogglePassword /> */}
+      <AsteriskFieldValidation />
     </>
   );
 }
