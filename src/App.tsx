@@ -1,5 +1,7 @@
 import "./App.css";
-import Accordian from "./Components/Accordian";
+import Counter from "./Components/Counter";
+// import FilterRecipies from "./Components/FilterRecipies";
+// import Accordian from "./Components/Accordian";
 // import AsteriskFieldValidation from "./Components/AsteriskValidation";
 // import CopyToClipboard from "./Components/CopyToClipboard";
 // import TabSwitcher from "./Components/TabSwitcher";
@@ -16,7 +18,9 @@ function App() {
       {/* <AsteriskFieldValidation /> */}
       {/* <CopyToClipboard /> */}
       {/* <TabSwitcher /> */}
-      <Accordian />
+      {/* <Accordian /> */}
+      {/* <FilterRecipies /> */}
+      <Counter />
     </>
   );
 }
