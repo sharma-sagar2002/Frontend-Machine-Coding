@@ -1,6 +1,7 @@
 import "./App.css";
+import Readmore from "./Components/Readmore";
 // import Counter from "./Components/Counter";
-import Tooltip from "./Components/Tooltip";
+// import Tooltip from "./Components/Tooltip";
 // import FilterRecipies from "./Components/FilterRecipies";
 // import Accordian from "./Components/Accordian";
 // import AsteriskFieldValidation from "./Components/AsteriskValidation";
@@ -22,7 +23,8 @@ function App() {
       {/* <Accordian /> */}
       {/* <FilterRecipies /> */}
       {/* <Counter /> */}
-      <Tooltip />
+      {/* <Tooltip /> */}
+      <Readmore />
     </>
   );
 }
