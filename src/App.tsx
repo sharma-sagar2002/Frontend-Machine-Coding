@@ -1,5 +1,6 @@
 import "./App.css";
-import Counter from "./Components/Counter";
+// import Counter from "./Components/Counter";
+import Tooltip from "./Components/Tooltip";
 // import FilterRecipies from "./Components/FilterRecipies";
 // import Accordian from "./Components/Accordian";
 // import AsteriskFieldValidation from "./Components/AsteriskValidation";
@@ -20,7 +21,8 @@ function App() {
       {/* <TabSwitcher /> */}
       {/* <Accordian /> */}
       {/* <FilterRecipies /> */}
-      <Counter />
+      {/* <Counter /> */}
+      <Tooltip />
     </>
   );
 }
