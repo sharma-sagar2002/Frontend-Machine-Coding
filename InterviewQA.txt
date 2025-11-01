@@ -1,0 +1,57 @@
+***********************REACT INTERVIEW QUES AND ANSWERS*************************
+
+
+
+Hooks : 
+
+1. useState 
+2. useEffect 
+3. useContext 
+4. useReducer 
+5. useMemo 
+6. useRef 
+
+Higher Order Components (what ? why? when? how?) : 
+
+Lifecycle methods of components (mounting , updating, unmounting) : 
+
+State Management (all the things) : 
+
+1. state Management
+2. Props drilling 
+3. Context
+4. Redux (how it works , why , when )
+
+
+Custom Hooks : 
+
+1. when to use with example 
+2. code also 
+
+Lazy Loading : 
+
+Virtual DOM :
+
+1. Reconcilliation 
+2. React Fibre 
+3. Diff Algorithm 
+4. How Render works 
+
+SSR vs CSR : 
+
+Routing (RBAC) : 
+
+1. react-router 
+2. protected routes 
+3. Dynamic routing 
+
+Aync Tasks : 
+
+1. API Calls 
+2. Event 
+3. Promises 
+4. Web APIs
+
+Performance, Security, Accessibility, Testing 
+
+

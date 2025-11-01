@@ -1,5 +1,6 @@
 import "./App.css";
-import Readmore from "./Components/Readmore";
+import Typewriter from "./Components/Typewriter";
+// import Readmore from "./Components/Readmore";
 // import Counter from "./Components/Counter";
 // import Tooltip from "./Components/Tooltip";
 // import FilterRecipies from "./Components/FilterRecipies";
@@ -24,7 +25,8 @@ function App() {
       {/* <FilterRecipies /> */}
       {/* <Counter /> */}
       {/* <Tooltip /> */}
-      <Readmore />
+      {/* <Readmore /> */}
+      <Typewriter text="I am frontend developer" delay={100} />
     </>
   );
 }
