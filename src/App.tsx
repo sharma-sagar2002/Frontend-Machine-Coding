@@ -1,5 +1,6 @@
 import "./App.css";
-import Typewriter from "./Components/Typewriter";
+// import Carousel from "./Components/Carousel";
+// import Typewriter from "./Components/Typewriter";
 // import Readmore from "./Components/Readmore";
 // import Counter from "./Components/Counter";
 // import Tooltip from "./Components/Tooltip";
@@ -26,7 +27,8 @@ function App() {
       {/* <Counter /> */}
       {/* <Tooltip /> */}
       {/* <Readmore /> */}
-      <Typewriter text="I am frontend developer" delay={100} />
+      {/* <Typewriter text="I am frontend developer" delay={100} /> */}
+      {/* <Carousel /> */}
     </>
   );
 }
