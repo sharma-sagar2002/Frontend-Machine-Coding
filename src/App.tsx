@@ -1,5 +1,6 @@
 import "./App.css";
-import TicTacToe from "./Components/TicTacToe";
+// import TicTacToe from "./Components/TicTacToe";
+import TransferList from "./Components/TransferList";
 // import Carousel from "./Components/Carousel";
 // import Typewriter from "./Components/Typewriter";
 // import Readmore from "./Components/Readmore";
@@ -30,7 +31,8 @@ function App() {
       {/* <Readmore /> */}
       {/* <Typewriter text="I am frontend developer" delay={100} /> */}
       {/* <Carousel /> */}
-      <TicTacToe />
+      {/* <TicTacToe /> */}
+      <TransferList />
     </>
   );
 }
