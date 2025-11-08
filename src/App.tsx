@@ -1,6 +1,7 @@
 import "./App.css";
+import TempConverter from "./Components/TempConverter";
 // import TicTacToe from "./Components/TicTacToe";
-import TransferList from "./Components/TransferList";
+// import TransferList from "./Components/TransferList";
 // import Carousel from "./Components/Carousel";
 // import Typewriter from "./Components/Typewriter";
 // import Readmore from "./Components/Readmore";
@@ -32,7 +33,8 @@ function App() {
       {/* <Typewriter text="I am frontend developer" delay={100} /> */}
       {/* <Carousel /> */}
       {/* <TicTacToe /> */}
-      <TransferList />
+      {/* <TransferList /> */}
+      <TempConverter />
     </>
   );
 }

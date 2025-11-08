@@ -4,13 +4,13 @@ Hooks :
 
 1. useState (done)
 2. useEffect  (done)
-3. useContext  
+3. useContext 
 4. useReducer 
 5. useMemo (done)
 6. useRef (done)
-7. useCallBack()
+7. useCallBack() 
 
-Higher Order Components (what ? why? when? how?) : 
+Higher Order Components (what ? why? when? how?) :
 
 Lifecycle methods of components (mounting , updating, unmounting) : 
 
