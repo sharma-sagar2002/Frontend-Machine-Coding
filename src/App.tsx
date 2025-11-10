@@ -1,5 +1,6 @@
 import "./App.css";
-import TempConverter from "./Components/TempConverter";
+import PinItems from "./Components/PinItems";
+// import TempConverter from "./Components/TempConverter";
 // import TicTacToe from "./Components/TicTacToe";
 // import TransferList from "./Components/TransferList";
 // import Carousel from "./Components/Carousel";
@@ -34,7 +35,8 @@ function App() {
       {/* <Carousel /> */}
       {/* <TicTacToe /> */}
       {/* <TransferList /> */}
-      <TempConverter />
+      {/* <TempConverter /> */}
+      <PinItems />
     </>
   );
 }
