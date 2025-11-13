@@ -1,5 +1,6 @@
 import "./App.css";
-import PinItems from "./Components/PinItems";
+import BillingCounter from "./Components/BillingCounter";
+// import PinItems from "./Components/PinItems";
 // import TempConverter from "./Components/TempConverter";
 // import TicTacToe from "./Components/TicTacToe";
 // import TransferList from "./Components/TransferList";
@@ -36,7 +37,8 @@ function App() {
       {/* <TicTacToe /> */}
       {/* <TransferList /> */}
       {/* <TempConverter /> */}
-      <PinItems />
+      {/* <PinItems /> */}
+      <BillingCounter />
     </>
   );
 }
