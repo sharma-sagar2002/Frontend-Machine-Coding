@@ -1,7 +1,8 @@
 import "./App.css";
+import BmiCalculator from "./Components/BmiCalculator";
 // import BillingCounter from "./Components/BillingCounter";
-import Demo from "./Components/Demo";
-import PaginatedBookmark from "./Components/PaginatedBookmark";
+// import Demo from "./Components/Demo";
+// import PaginatedBookmark from "./Components/PaginatedBookmark";
 // import PinItems from "./Components/PinItems";
 // import TempConverter from "./Components/TempConverter";
 // import TicTacToe from "./Components/TicTacToe";
@@ -42,7 +43,8 @@ function App() {
       {/* <PinItems /> */}
       {/* <BillingCounter /> */}
       {/* <Demo /> */}
-      <PaginatedBookmark />
+      {/* <PaginatedBookmark /> */}
+      <BmiCalculator />
     </>
   );
 }
