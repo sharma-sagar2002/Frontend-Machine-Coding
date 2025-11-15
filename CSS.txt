@@ -1,0 +1,40 @@
+1. Box-Sizing :  there are two properties in this : 
+
+ a. content-box : it will calulate the net width with width + padding +border (default - not recommended - ui layout breaks)
+ b. border-box : it gives the actual width i.e the width includes padding , border etc in it (good practice)
+
+
+2. CSS Positioning :  
+
+ a. Relative : 
+    1. the element is positioned relative to its previous position 
+    2. Gap is maintained when it is positioned 
+
+ b. Absolute : 
+    1. the element is positioned absolute to the closest positioned parent 
+    2. Gap is filled 
+
+ c. Static : (dafault)
+
+ d. Fixed : 
+   1. the element is positioned according to browser window 
+   2. it is fixed at the position throughout the web page 
+
+ e. Sticky : 
+   1. the element is positioned but when the parent component is disappeared from the window (like in scroll) then is also gone with that 
+
+
+3. CSS Size Unit : 
+   
+ a. px : it is 1/97th of the inch 
+
+ b. em : 
+    1. in this padding and margin remains unchanged 
+    2. fontsize is calulated acc to parent i.e 1 em = fontsize of parent 
+    3. width is calulated according to font size of it's own 
+
+ c. rem : simply is nothing just according to root element font size i.e 1 rem = 16px
+
+ d. vh : height equals to window height 
+
+ e. vw : width equals to window width 

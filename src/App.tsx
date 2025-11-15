@@ -1,6 +1,6 @@
 import "./App.css";
 // import BmiCalculator from "./Components/BmiCalculator";
-import PasswordGenerator from "./Components/PasswordGenerator";
+// import PasswordGenerator from "./Components/PasswordGenerator";
 // import BillingCounter from "./Components/BillingCounter";
 // import Demo from "./Components/Demo";
 // import PaginatedBookmark from "./Components/PaginatedBookmark";
@@ -46,7 +46,7 @@ function App() {
       {/* <Demo /> */}
       {/* <PaginatedBookmark /> */}
       {/* <BmiCalculator /> */}
-      <PasswordGenerator />
+      {/* <PasswordGenerator /> */}
     </>
   );
 }
