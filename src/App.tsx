@@ -1,5 +1,6 @@
 import "./App.css";
-import MarkdownEditor from "./Components/MarkdownEditor";
+// import MarkdownEditor from "./Components/MarkdownEditor";
+import ProgressBar from "./Components/ProgressBar";
 // import BmiCalculator from "./Components/BmiCalculator";
 // import PasswordGenerator from "./Components/PasswordGenerator";
 // import BillingCounter from "./Components/BillingCounter";
@@ -48,7 +49,8 @@ function App() {
       {/* <PaginatedBookmark /> */}
       {/* <BmiCalculator /> */}
       {/* <PasswordGenerator /> */}
-      <MarkdownEditor />
+      {/* <MarkdownEditor /> */}
+      <ProgressBar progress={80} />
     </>
   );
 }
