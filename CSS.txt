@@ -38,3 +38,57 @@
  d. vh : height equals to window height 
 
  e. vw : width equals to window width 
+
+
+4. Float and clear : 
+
+ a. float : it is the property used to float element like the other element is wrapped around it like in book page content is wrapped and image is in right or left 
+
+ b. clear : if an element is is having an element in its right and left and both are float then we can decide which we want to clear like clear : left , right 
+
+
+5. Flexbox :
+ taking analogy that we have a big conatainer in that we have 4 boxes (divs)
+
+  - now we have to make the container , display :flex , using this the container becomes a flexbox and the items in that are k/a flex items 
+  
+  - Flex-wrap : In this the items which are in the container are wrapped when we change the width of the container 
+
+  - Flex-direction : 
+    a. row : in this the items are aligned in the row wise fashion (in this we have hor. axis)
+    b. column : in this the items are aligned in the column wise fashion (in this we have vertical axis)
+    c. row-reverse
+    d. column-reverse 
+
+  - Justify-content : (according to the axis - depends on flex-direction)
+    a. start : align items at the start of the axis 
+    b. end : at end
+    c. center : at center 
+    d. space-between : 1st and last item we be placed at ends and other are filled evenly 
+    e. space-around : as name suggests each item will be having space in right and left part and all will be having even space 
+    f. space-evenly : every box will be at equal distant from each other and with axis end also 
+
+  - Align-items : (items are aligned according to vertical axis always which is placed at exatcly middle of the screen) 
+    a. flex-start 
+    b. flex-end 
+    c. center 
+    d. stretch (default)
+
+  - Now understanding properties of flex item : 
+   
+  - order : it is a number value lower to higher arranges the flex items in start to end position 
+
+  - flex-shrink : if items are shrinking then it is like multiplier if it is 2 for an item then that means that the box will be shrinking at speed of  2 times according to others 
+
+  - flex-grow : same but for expansion factor simple 
+
+  - flex-basis : it is used to give dimension of the item i.e width 
+
+  - align-self : (according to cross axis just like align items axis)
+    a. stretch 
+    b. center 
+    c. end 
+    d. start 
+
+
+
