@@ -1,6 +1,7 @@
 import "./App.css";
 // import MarkdownEditor from "./Components/MarkdownEditor";
 import ProgressBar from "./Components/ProgressBar";
+import TrafficLights from "./Components/TrafficLights";
 // import BmiCalculator from "./Components/BmiCalculator";
 // import PasswordGenerator from "./Components/PasswordGenerator";
 // import BillingCounter from "./Components/BillingCounter";
@@ -50,7 +51,8 @@ function App() {
       {/* <BmiCalculator /> */}
       {/* <PasswordGenerator /> */}
       {/* <MarkdownEditor /> */}
-      <ProgressBar progress={80} />
+      {/* <ProgressBar progress={80} /> */}
+      <TrafficLights/>
     </>
   );
 }
