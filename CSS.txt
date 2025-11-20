@@ -91,4 +91,27 @@
     d. start 
 
 
+ 6. Animations in CSS : 
+  
+   - when we change the syle of an element then this transition is k/a animation 
+   - @keyframes : in this we have to objects from and to in that we define our initial state and final state respectively 
+   - animation duration : it gives what will be time period (in sec) from initial to final state 
+   - animation-delay : after how much seconds the animation will start 
+   - animation-iteration-count : how many times animation will happen 
+   - transition-timing-function : ease-in, ease-out, etc and bazier-curve also there 
+     - cubic-bezier (_,_,_,_) : each parameter value will be less than equals to 1 always 
+   - animation-direction : 'reverse', etc 
+
+  Difference between transition and animation : transition is a single step movement but animation consists of multiple movements that is multiple transitions 
+   
+  7. Transition  : it applied to the property of an element and it is similar to animation properties name are also similar just replace animation with transition 
+
+  8. Transform : rotation , scaling of size , etc of an element 
+    - translate(x,y) : x, y are in px
+
+  9. Grid :
+
+
+  
+
 

@@ -9,8 +9,8 @@ const TrafficLights = () => {
 
             setLight((prev)=> {
                 if(prev==='red') setLight('yellow')
-                    if(prev ==='yellow' ) setLight('green')
-                        return 'red'
+                if(prev ==='yellow' ) setLight('green')
+                return 'red'
             })
 
         }, light==='red' ? 3000 : light==='yellow' ? 1000: 2000);

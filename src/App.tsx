@@ -1,6 +1,6 @@
 import "./App.css";
 // import MarkdownEditor from "./Components/MarkdownEditor";
-import ProgressBar from "./Components/ProgressBar";
+// import ProgressBar from "./Components/ProgressBar";
 import TrafficLights from "./Components/TrafficLights";
 // import BmiCalculator from "./Components/BmiCalculator";
 // import PasswordGenerator from "./Components/PasswordGenerator";
