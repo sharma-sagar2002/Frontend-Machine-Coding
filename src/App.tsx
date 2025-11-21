@@ -1,7 +1,9 @@
 import "./App.css";
+import TodoList from "./Components/TodoList";
+// import MultiProgressBar from "./Components/MultiProgressBar";
 // import MarkdownEditor from "./Components/MarkdownEditor";
 // import ProgressBar from "./Components/ProgressBar";
-import TrafficLights from "./Components/TrafficLights";
+// import TrafficLights from "./Components/TrafficLights";
 // import BmiCalculator from "./Components/BmiCalculator";
 // import PasswordGenerator from "./Components/PasswordGenerator";
 // import BillingCounter from "./Components/BillingCounter";
@@ -52,7 +54,10 @@ function App() {
       {/* <PasswordGenerator /> */}
       {/* <MarkdownEditor /> */}
       {/* <ProgressBar progress={80} /> */}
-      <TrafficLights/>
+      {/* <TrafficLights/> */}
+      {/* <MultiProgressBar/> */}
+      <TodoList/>
+
     </>
   );
 }
