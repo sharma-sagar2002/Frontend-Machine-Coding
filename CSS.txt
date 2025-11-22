@@ -109,7 +109,25 @@
   8. Transform : rotation , scaling of size , etc of an element 
     - translate(x,y) : x, y are in px
 
-  9. Grid :
+  9. Grid : it is for creating 2d layout 
+   it is also like flex box and we create the parent conatiner grid and the child items become grid items 
+   - display : grid 
+   - grid-template-rows : repeat(3,1fr) , '1fr 1fr 1fr' bith are same , 3 rows with 1 fr (fractional unit) 
+   - grid-template-columns : to give no of columns 
+   - row-gap : to give gaps between rows 
+   - column-gap : to give gap between columns 
+   
+   Now properties for item: 
+
+   - grid-column-start : 1,
+   - grid-column-end : 4 ,
+
+   it will stretch the item from start to that position in column wise (width will increase)
+
+   - grid-row-start : 1,
+   - grid-row-end : 4,
+
+   it will stretch the item from start to that position in row wise (height will increase)
 
   
 
