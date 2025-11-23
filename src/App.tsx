@@ -1,5 +1,6 @@
 import "./App.css";
-import UndoRedo from "./Components/UndoRedo";
+import Stopwatch from "./Components/Stopwatch";
+// import UndoRedo from "./Components/UndoRedo";
 // import TodoList from "./Components/TodoList";
 // import MultiProgressBar from "./Components/MultiProgressBar";
 // import MarkdownEditor from "./Components/MarkdownEditor";
@@ -58,7 +59,8 @@ function App() {
       {/* <TrafficLights/> */}
       {/* <MultiProgressBar/> */}
       {/* <TodoList/> */}
-      <UndoRedo/>
+      {/* <UndoRedo/> */}
+      <Stopwatch/>
 
     </>
   );
