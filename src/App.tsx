@@ -1,5 +1,6 @@
 import "./App.css";
-import Stopwatch from "./Components/Stopwatch";
+import ListSorter from "./Components/ListSorter";
+// import Stopwatch from "./Components/Stopwatch";
 // import UndoRedo from "./Components/UndoRedo";
 // import TodoList from "./Components/TodoList";
 // import MultiProgressBar from "./Components/MultiProgressBar";
@@ -60,7 +61,8 @@ function App() {
       {/* <MultiProgressBar/> */}
       {/* <TodoList/> */}
       {/* <UndoRedo/> */}
-      <Stopwatch/>
+      {/* <Stopwatch/> */}
+      <ListSorter/>
 
     </>
   );
