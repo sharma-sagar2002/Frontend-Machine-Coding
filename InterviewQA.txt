@@ -53,4 +53,34 @@ Aync Tasks :
 
 Performance, Security, Accessibility, Testing 
 
+Lifycycle in React : 
 
+Mounting phase : 
+1. Component is mounted and loaded into the DOM for first time 
+2. a. constructor is called 
+   b. render method is called 
+   c. componentDidMount is called which is also called the useEffect with empty dependency (here we can also make api calls )
+
+Component Update : 
+
+
+React has 2 phases: 
+1. render phase 
+2. commit phase 
+
+
+render phase : 
+ a. render ()
+ b. shouldComponentUpdate()  - this method is just used for optimisation just to check whether the DOM needs updation or not 
+ 
+commit phase : 
+ a. getSnapshotBeforeUpdate() - it is used to store the snapshot(state) of the previous dom 
+ b. Now the actual DOM will be updated 
+ c. componentDidUpdate() - this is used to make api calls and is also used as useEffect in the functional component
+
+ Unmounting Phase : 
+ 
+ 1. componentWillUnmount() - it is called just before the component is unmounted from the DOM (it is also the return method in the useEffect)
+
+Ques . Why react is fast why we build these library can we not use js (jquery) only ?
+Ans . actually the jquery mutates the actual DOM and in this process recalculation , layout creation , styles configuartion is updated unnecessarily which takes time due to which react fiber comes and it is just used to updatethe changes DOM part only and it does this using diff algo 
