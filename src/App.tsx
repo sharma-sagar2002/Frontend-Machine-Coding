@@ -1,5 +1,7 @@
 import "./App.css";
-import ListSorter from "./Components/ListSorter";
+// import ListSorter from "./Components/ListSorter";
+import QuizApp from "./Components/QuizApp";
+import { answerList, questionList } from "./utils/constant";
 // import Stopwatch from "./Components/Stopwatch";
 // import UndoRedo from "./Components/UndoRedo";
 // import TodoList from "./Components/TodoList";
@@ -62,7 +64,8 @@ function App() {
       {/* <TodoList/> */}
       {/* <UndoRedo/> */}
       {/* <Stopwatch/> */}
-      <ListSorter/>
+      {/* <ListSorter/> */}
+      <QuizApp questionList={questionList} answerList={answerList}/>
 
     </>
   );

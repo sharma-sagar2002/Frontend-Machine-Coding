@@ -150,3 +150,42 @@ export const colors = {
 };
 
 
+export const questionList = [
+  {
+    id: 0,
+    ques: "Which language is primarily used for styling web pages?",
+    options: ["HTML", "CSS", "JavaScript", "Python"]
+  },
+  {
+    id: 1,
+    ques: "Which data structure uses LIFO (Last In First Out)?",
+    options: ["Queue", "Stack", "Array", "Graph"]
+  },
+  {
+    id: 2,
+    ques: "Which keyword is used to declare a constant in JavaScript?",
+    options: ["var", "let", "const", "static"]
+  },
+  {
+    id: 3,
+    ques: "Which HTML tag is used to display an image?",
+    options: ["<img>", "<image>", "<picture>", "<src>"]
+  },
+  {
+    id: 4,
+    ques: "React is primarily used for building _____?",
+    options: ["Databases", "User Interfaces", "Operating Systems", "Servers"]
+  }
+];
+
+
+export const answerList = [
+  { id: 0, ans: "CSS" },
+  { id: 1, ans: "Stack" },
+  { id: 2, ans: "const" },
+  { id: 3, ans: "<img>" },
+  { id: 4, ans: "User Interfaces" }
+];
+
+
+
