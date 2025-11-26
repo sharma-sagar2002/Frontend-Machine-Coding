@@ -1,7 +1,8 @@
 import "./App.css";
+import CaptchaGenerator from "./Components/CaptchaGenerator";
 // import ListSorter from "./Components/ListSorter";
-import QuizApp from "./Components/QuizApp";
-import { answerList, questionList } from "./utils/constant";
+// import QuizApp from "./Components/QuizApp";
+// import { answerList, questionList } from "./utils/constant";
 // import Stopwatch from "./Components/Stopwatch";
 // import UndoRedo from "./Components/UndoRedo";
 // import TodoList from "./Components/TodoList";
@@ -65,8 +66,8 @@ function App() {
       {/* <UndoRedo/> */}
       {/* <Stopwatch/> */}
       {/* <ListSorter/> */}
-      <QuizApp questionList={questionList} answerList={answerList}/>
-
+      {/* <QuizApp questionList={questionList} answerList={answerList}/> */}
+      <CaptchaGenerator/>
     </>
   );
 }
