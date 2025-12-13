@@ -83,3 +83,34 @@ A. this is used to refernce an object but which object it refrences to depends t
 
     d. in setTimeout function value is this is also window object it does not refer to any object if you give it 
 
+
+8. Explain about call , apply, bind method ?
+
+A . call() : using this we can use method of any other object just by passing the reference of out object .
+  
+  eg: const obj = {
+   name : "sagar" ,
+   display: function (){
+      console.log(this.name)
+   }
+  }
+
+  const obj1 = {
+   name : "rashi"
+  }
+
+  console.log(obj.display.call(obj1)) // rashi 
+
+  let display = function(hometown, country){
+    console.log(this.name + " " + hometowm+ country)
+  }
+
+  console.log(display.call(obj1, "delhi", "india"))
+
+B. apply() : it is exactly similar to call method just one thing that we pass array of argument instead of passing them in comma separate 
+
+ eg : console.log(display.apply(obj1, ["delhi", "india"])) // same output as call wala 
+
+C. bind() - it is also similar to call method just it does not call the fucntion immediately instead it return the fucntion ans we can call that function in future 
+ 
+
