@@ -112,5 +112,62 @@ B. apply() : it is exactly similar to call method just one thing that we pass ar
  eg : console.log(display.apply(obj1, ["delhi", "india"])) // same output as call wala 
 
 C. bind() - it is also similar to call method just it does not call the fucntion immediately instead it return the fucntion ans we can call that function in future 
+
+
+9. Which should we use async or defer for loading our scripts ?
+
+A. async does not exceutes in the order are executed randomly so if we have multiple scripts in our file to be loaded and they are dependent somehow then it can break the code while defer executes in order .
+ so if scripts are independent then use async loading else defer 
+
+
+10. Explain about function currying ?
+
+A. it is simply converting a function with multiple arguments into a chain of functions with each taking one argument 
+
+we can achieve it using 2 ways : 
+ 
+ a. using closure  method : 
+
+  const multiply = function (a,b){
+   console.log(a*b);
+  }
+
+  const modifiedMultiply = function(a){
+   return function(b){
+      return a*b;
+    }
+  }
+
+  console.log(modifiedMultiply(2)(3));
+
+  b. using bind method : (partial currying)
+
+   const multiplyBy2 = multiple.bind(null, 2);
+   console.log(multiplyBy2(3));  // 6
+
+
+
+11. Explain me about CORS ?
+
+A. So CORS- Cross Origin Resource Sharing 
+
+ this is security mechanism of browser which enforces and manages how the resources will be shared among oriigns ( it is not enforced by server or frontend , it is brower security mechanism)
+
+  Origin : domain + protocol + port 
+
+ if the calls are between same origin same browser does not rescrict that it allows resource sharing but not in cross origin 
+
+ there are 2 types of calls - simple and non-simple , 
+  
+  a. Simple Call : it is recognised as simple and safe by browser so the call can be directly made to server 
+
+  b. Non-Simple call : these are recorgnised as risky by browser so first a pre-flight call is made to server and if server allows it and acknowledge it then real call is made to server 
+
+  Note : Get, post (without json) , head - simple calls , others non-simple (post (json), put , patch , delete)
+     
+   why json is not recorgnised in simple it is widely used ?
+   bcz json was not there when web security rules were made and json is powerful enough to change the server configurations so thats why 
+
+
  
 
