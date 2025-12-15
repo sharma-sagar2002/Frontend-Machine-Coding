@@ -169,5 +169,8 @@ A. So CORS- Cross Origin Resource Sharing
    bcz json was not there when web security rules were made and json is powerful enough to change the server configurations so thats why 
 
 
- 
+ 12. Local Storage and Session Storage .
 
+ A. Session Storage : this is small as compare to local one but bigger than cookie, it is time bounded that is the data will be there in the memory till the session is active , if you close the tab or session of the browser then it is also gone . Unline cookies it is not shared to server 
+
+ B. Local Storage : this is the biggest storage among 3 . It is not cleared unless user clears it explicitily . We can store data in this. 
