@@ -1,0 +1,28 @@
+we can add css in 3 ways : 
+
+ 1. Inline CSS - using style attribute 
+ 2. Internal CSS - using style tag 
+ 3. External CSS -  using external file 
+
+2. Fonts and Colors : 
+
+  a. font-family 
+  b. font-size 
+  c. font-weight : gives thickness 
+  d. line-height : it gives gap between 2 lines 
+  
+  a. rgb(a,b,c): all are from 0-255
+  b. rgba(a,b,c,alpha): alpha decides the transparency level of a color 
+  c. hexadecimal 
+  d. hsl (hue - color , saturation , lightness)
+
+3. Box Model :
+
+  box-sizing : border-box
+
+  It has 4 elements in this : 
+  a. content 
+  b. padding 
+  c. border 
+  d. margin 
+

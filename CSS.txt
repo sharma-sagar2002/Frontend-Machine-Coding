@@ -14,7 +14,7 @@
     1. the element is positioned absolute to the closest positioned parent 
     2. Gap is filled 
 
- c. Static : (dafault)
+ c. Static : (dafault) (cannot apply properties like top, left, bottom , right , z-index etc)
 
  d. Fixed : 
    1. the element is positioned according to browser window 
@@ -26,7 +26,7 @@
 
 3. CSS Size Unit : 
    
- a. px : it is 1/97th of the inch 
+ a. px : it is 1/96 the of the inch 
 
  b. em : 
     1. in this padding and margin remains unchanged 
@@ -38,6 +38,8 @@
  d. vh : height equals to window height 
 
  e. vw : width equals to window width 
+
+ f. % : it is given according to the parent component
 
 
 4. Float and clear : 
@@ -130,5 +132,30 @@
    it will stretch the item from start to that position in row wise (height will increase)
 
   
+
+10. Media queries : (change CSS for dirrent screen sizes) 
+
+ syntax : 
+    
+    @media (min-width :400px) and max-width(600px) {
+      .box {
+        background-color :green ;
+      }
+    }
+
+
+11. Box-Shdow : box-shadow : x-offset y-offset blur-radius spread-radius color ;
+
+12 . How to create a custom variable : 
+
+  eg : 
+  :root {
+   --custom-color : brown ; // declaration
+  }
+  
+  .box {
+      
+     background-color: var(--custom-color);  //usage 
+  } 
 
 
