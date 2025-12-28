@@ -22,7 +22,7 @@
 
  e. Sticky : 
    1. the element is positioned but when the parent component is disappeared from the window (like in scroll) then is also gone with that 
-   
+
    2. there are 3 consitions without which it does not work : 
      - the containe should be scrollable 
      - top, bottom , etc should be there without this no sicky 
@@ -218,6 +218,35 @@
        - opacity < 1
        - transform : translate()
      - Child elements can never escape parent stacking context , if parent created a seaparete one then that is different  thing 
+
+  16. Optimisation topic in CSS : 
+    
+     so here is how pipeline works : 
+      
+      1. HTML - DOM 
+      2. CSS - CSSOM 
+      3. Render Tree - It is combination of DOM and CSSOM, in this only nodes are present which are to be visible or shown on the screen 
+        eg : <body>
+              <h1>Hello</h1>
+              <p style="display:none">Hidden</p>
+              <span>World</span>
+             </body>
+
+             body
+            ├── h1 ("Hello")
+            └── span ("World")
+
+       4. Layout (Reflow) : In this width , height, position etc are added to the nodes to create the layout 
+       5. Paint : In this color , border etc are applied to the nodes 
+       6. Composite : In this the layer is moved to GPU for optimization ,no reflow or repaint occurs here , that's why transform is faster and mor optimized than positioning 
+
+
+  13. Pseudo classes and Pseudo elements 
+  A. pseudo-class : it is used to apply css on the state of the element and represented by ':'
+     pseudo-elements : it is used to apply css inside the part of an element and represented by '::'
+
+
+
 
     
 
