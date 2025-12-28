@@ -22,6 +22,11 @@
 
  e. Sticky : 
    1. the element is positioned but when the parent component is disappeared from the window (like in scroll) then is also gone with that 
+   
+   2. there are 3 consitions without which it does not work : 
+     - the containe should be scrollable 
+     - top, bottom , etc should be there without this no sicky 
+     - overflow property of parent container should be visible not hidden 
 
 
 3. CSS Size Unit : 
@@ -60,7 +65,7 @@
     a. row : in this the items are aligned in the row wise fashion (in this we have hor. axis)
     b. column : in this the items are aligned in the column wise fashion (in this we have vertical axis)
     c. row-reverse
-    d. column-reverse 
+    d. column-reverse   
 
   - Justify-content : (according to the axis - depends on flex-direction)
     a. start : align items at the start of the axis 
@@ -73,7 +78,7 @@
   - Align-items : (items are aligned according to vertical axis always which is placed at exatcly middle of the screen) 
     a. flex-start 
     b. flex-end 
-    c. center 
+    c. center  
     d. stretch (default)
 
   - Now understanding properties of flex item : 
@@ -107,9 +112,27 @@
   Difference between transition and animation : transition is a single step movement but animation consists of multiple movements that is multiple transitions 
    
   7. Transition  : it applied to the property of an element and it is similar to animation properties name are also similar just replace animation with transition 
+   
+     it is applied using pseudo classes , in this we go from one state to another of an element 
 
-  8. Transform : rotation , scaling of size , etc of an element 
-    - translate(x,y) : x, y are in px
+     <style>
+      
+       .box {
+        width : 100px;
+        transition-property : width ;
+        transition-duration : 2s;
+        transition-delay : 4s;
+        transition-timing-function : linear ;
+
+       }
+       .box :hover {
+        width :1200px;
+       }
+     </style>
+    
+
+  8. Transform : rotation , scaling of size and move in x,y direction  etc of an element 
+     transform : translate(x,y) : x, y are in px
 
   9. Grid : it is for creating 2d layout 
    it is also like flex box and we create the parent conatiner grid and the child items become grid items 
@@ -130,6 +153,16 @@
    - grid-row-end : 4,
 
    it will stretch the item from start to that position in row wise (height will increase)
+
+   ------------ we can create grid reponsive using media queries and without using it also ------------
+
+   to create a response grid layout without using media queries : 
+
+   - minmax : 
+   
+   - auto-fit : 
+
+   -auto-fill : 
 
   
 
@@ -154,8 +187,37 @@
   }
   
   .box {
-      
      background-color: var(--custom-color);  //usage 
   } 
 
+  13. calc (expression ) : 
+      - calc methos is a fucntion that lets you do calculation to determine css 
+      - the most common use is that we can mix different css units 
+      - + ,-, *, / we can use these inside this function 
+      - we need to give gap also , like eg : calc (20rem - 10px + 10%);
+
+  14. Table tag in HTML : 
+     - table tag is used to show data in a table format it is not used as a layout it's a bad practice 
+     - you can see the code in html 
+     - we have table , th which is used for header cells they are having highlighted text and center aligned , we have tr and td tags 
+     - we have colspan and rowspan which are applied to cells i.e th and td to merge col or rows 
+     - border vs border-collapse : 
+        in this border-collapse only gives border to parementer like if we have 2 cells in the last row but we have 3 cols in table then border will be cutted and willonly to applied to cells accordingly 
+        but in border it is applied to table parimeter 
+     - scope : it is used to help screen reader to find which header belongs to which col etc and they are just only   used for accessibility and screen readiness not for any layout change 
+
+   
+  15. z-index : 
+     - it is only applied to element which are positioned 
+     - it decides which element will be at top or bottom in ui 
+     - it is only applied to to its siblings and under same stacking context 
+     - thhink stacking context as floors of a building 
+     - there are some exception which creates a separate stacking context : 
+       - z-index :1 ;
+         position : relative ;
+       - opacity < 1
+       - transform : translate()
+     - Child elements can never escape parent stacking context , if parent created a seaparete one then that is different  thing 
+
+    
 
