@@ -36,7 +36,9 @@ Virtual DOM :
 3. Diff Algorithm 
 4. How Render works 
 
-SSR vs CSR : 
+SSR vs CSR : react is both csr and ssr , browser side -CSR and server side - SSR 
+A. CSR : in this browser requests minimalhtml and then executes the JS from client side and then html is rendereded 
+   SSR : in this browser requests the page the server executes the js and then directly sends back to browser then just loading happens at client level 
 
 Routing (RBAC) : 
 

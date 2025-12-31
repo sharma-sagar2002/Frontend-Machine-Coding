@@ -1,0 +1,12 @@
+1. useMemo ? 
+A. this is a react hook which is used to memoize the expensive operations , like if we have to do filtering on a large dataset then if the compoentn rerenders then alla tha function gets executed again and if we have expensive calculations in it then they will also be recalculated , so we memoize these expensive calculations so that our rendering and peformance may become fast . It will only be rerun if dependency array varibles changes 
+
+eg : 
+const filteredUser = useMemo(()=>{
+  return users.filter((user)=>user.name !=='sagar')
+},[users])
+
+Disadvantage : 
+
+ - if we use it more extensively in our code then it does not guarantees you to optimize the ui because it consumes memory so due to this react skips these memoized value due to memory reasons 
+

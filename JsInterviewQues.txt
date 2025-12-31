@@ -47,7 +47,7 @@ A. So, there is no difference between two it's just way of coding and async awai
 
 A. we use try catch block in this 
 
-6. Difference between a fucntion and a method ?
+6. Difference between a function and a method ?
 
 A. A function inside an object is k/a method 
 
@@ -174,3 +174,77 @@ A. So CORS- Cross Origin Resource Sharing
  A. Session Storage : this is small as compare to local one but bigger than cookie, it is time bounded that is the data will be there in the memory till the session is active , if you close the tab or session of the browser then it is also gone . Unline cookies it is not shared to server 
 
  B. Local Storage : this is the biggest storage among 3 . It is not cleared unless user clears it explicitily . We can store data in this. 
+
+ 13. Why we can change value in const objects ?
+ A. Primitives are immutable atomic values, so changing them always creates a new value and requires rebinding. const prevents rebinding, which is why primitives cannot be “changed”.
+ But object and arrays are not primitive and they are mutable so we can do that 
+
+ 14. var vs let and const .
+ A. var - it is either function scoped or global scoped but not block scoped
+    let and const - both are block scoped only 
+
+ 15. Shadowing in JS ?
+ A. it is basically shadowing the value of outer scope variable with inner scope variable having the same name 
+    let-let , const-const, var-var these can do shadowing 
+    var cannot shadow let and const but vice versa is true 
+
+ eg : var a=10;
+      function display(){
+         let a=20;
+         console.loh(a);
+      }
+      console.log(a);
+      display();
+      // 20 , 10 
+
+ 15. Objects : 
+
+ A. it's a collection of key value pair, 
+  
+   -Methods for object creation : 
+
+   1. const obj = { a: 1, b: 2 };
+   2. const obj =. new Object()
+      obj.a = 1;
+   3. Using constructor function : 
+     function User(name, age) {
+      this.name = name;
+      this.age = age;
+      }
+
+      const u1 = new User("Sagar", 23);
+
+   -Accessing properties in object : 
+
+   1. obj.keyName 
+   2. obj["keyName"]
+
+   -Deleting property from object : 
+    
+   delete obj.keyName
+  
+   -Shallow and Deep Copy : 
+   in shallow copy only 1st level properties are copied to new object with thier own value but nested are still referecing the old object so if we modify from obj2 then obj1 properties also updates 
+   but in deep clone all the properties are copied to a new object and making it a separate object to do manipulation 
+
+   eg :  const obj1 = {
+    name :"Sagar",
+    job : {
+        dept :"IT",
+        role :"SDE"
+    }
+   };
+      // shallow copy
+      const obj2 = {...obj1};
+      console.log(obj2);
+      obj2.job.role="FE";
+      console.log(obj1);
+      // now obj1 value are also changed but it should not be changed 
+
+   -How to deep clone a object ?
+   1.  const obj2 =structuredClone(obj1); // only one drawback does not copies function else copies all things 
+   2. const deep = JSON.parse(JSON.stringify(obj)); // many drawbacks it does not copies fucntion , date type becomes string , symbol not copied, etc 
+   3. Best way is to write custom deep clone method to do this thing 
+
+
+   
