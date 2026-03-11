@@ -247,4 +247,21 @@ A. So CORS- Cross Origin Resource Sharing
    3. Best way is to write custom deep clone method to do this thing 
 
 
-   
+- creation of virtual dom 
+- now if changes occur then if manipulates the new virtual dom - it is simple and lightweight js representation of real dom
+- now calculates the changes between the two  reconciliation or diffing algorithm
+- now updates only the changed portion
+
+now component has a life cycle : 
+
+- mounting 
+  - constructor 
+  - render 
+  - componentDidMount 
+- updating
+  - shouldCompUpdate 
+  - Update real dom 
+  - compDidUpdate
+- unmounting 
+  - componentWillUnmount 
+

@@ -1,5 +1,5 @@
 import "./App.css";
-import CaptchaGenerator from "./Components/CaptchaGenerator";
+// import CaptchaGenerator from "./Components/CaptchaGenerator";
 // import ListSorter from "./Components/ListSorter";
 // import QuizApp from "./Components/QuizApp";
 // import { answerList, questionList } from "./utils/constant";
@@ -13,7 +13,7 @@ import CaptchaGenerator from "./Components/CaptchaGenerator";
 // import BmiCalculator from "./Components/BmiCalculator";
 // import PasswordGenerator from "./Components/PasswordGenerator";
 // import BillingCounter from "./Components/BillingCounter";
-// import Demo from "./Components/Demo";
+import Demo from "./Components/Demo";
 // import PaginatedBookmark from "./Components/PaginatedBookmark";
 // import PinItems from "./Components/PinItems";
 // import TempConverter from "./Components/TempConverter";
@@ -54,7 +54,7 @@ function App() {
       {/* <TempConverter /> */}
       {/* <PinItems /> */}
       {/* <BillingCounter /> */}
-      {/* <Demo /> */}
+      <Demo />
       {/* <PaginatedBookmark /> */}
       {/* <BmiCalculator /> */}
       {/* <PasswordGenerator /> */}
@@ -67,7 +67,6 @@ function App() {
       {/* <Stopwatch/> */}
       {/* <ListSorter/> */}
       {/* <QuizApp questionList={questionList} answerList={answerList}/> */}
-      <CaptchaGenerator/>
     </>
   );
 }
