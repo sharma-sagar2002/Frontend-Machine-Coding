@@ -32,10 +32,15 @@ import Demo from "./Components/Demo";
 // import TogglePassword from "./Components/TogglePassword";
 // import ChipsInput from "./Components/Chip";
 // import ColorExplorer from "./Components/ColorExplorer";
-
+// type ThemeContextType = {
+//   theme: "light" | "dark";
+//   setTheme: any;
+// };
+// const ThemeContext = createContext<ThemeContextType | null>(null);
 function App() {
   return (
     <>
+      {/* <ThemeContext.Provider value={{ theme, setTheme }}> */}
       {/* <ChipsInput /> */}
       {/* <ColorExplorer /> */}
       {/* <TogglePassword /> */}
@@ -67,8 +72,10 @@ function App() {
       {/* <Stopwatch/> */}
       {/* <ListSorter/> */}
       {/* <QuizApp questionList={questionList} answerList={answerList}/> */}
+      {/* </ThemeContext.Provider> */}
     </>
   );
 }
 
 export default App;
+// export { ThemeContext };
